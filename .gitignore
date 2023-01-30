@@ -1,0 +1,5 @@
+# Project exclude paths
+/db-service/.gradle/
+/jwt-service/.gradle/
+/jwt-service/build/
+/jwt-service/build/classes/java/main/
