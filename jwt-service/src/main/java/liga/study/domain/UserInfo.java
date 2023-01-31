@@ -42,7 +42,6 @@ public class UserInfo implements UserDetails, Serializable {
     @ManyToMany(fetch = FetchType.EAGER)
     private Set<Authority> authorities;
 
-
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return authorities;
@@ -54,7 +53,7 @@ public class UserInfo implements UserDetails, Serializable {
     }
 
     @Override
-    public String getUsername(){
+    public String getUsername() {
         return username;
     }
 
