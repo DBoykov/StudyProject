@@ -22,8 +22,7 @@ jobs:
           distribution: 'temurin'
           
       - name: Build with Gradle
-        run: |
-              cd /jwt-service
-              ./gradlew build
+        working-directory: ./jwt-service
+        run: ./gradlew build
           
     
